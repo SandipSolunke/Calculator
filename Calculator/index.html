@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="navbar">
+            <h1 id="heading" class="heaading">Calculator</h1>
+        </div>
+
+        <div class="container">
+
+            <form name="calcMain" class="table">
+                <table>
+                    <tr>
+                        <td colspan="6"><input name="displayMSG" value="" id="displayMSG"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="sin" onclick="document.calcMain.displayMSG.value+='Math.sin('">
+                        </td>
+                        <td><input type="button" value="cos" onclick="document.calcMain.displayMSG.value+='Math.cos('">
+                        </td>
+                        <td><input type="button" value="tan" onclick="document.calcMain.displayMSG.value+='Math.tan('">
+                        </td>
+                        <td><input type="button" value="^" onclick="document.calcMain.displayMSG.value+='Math.pow('">
+                        </td>
+                        <td><input type="button" value="<="></td>
+                        <td><input type="button" value="π" onclick="document.calcMain.displayMSG.value+='Math.PI('">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="log" onclick="document.calcMain.displayMSG.value+='Math.log('">
+                        </td>
+                        <td><input type="button" value="In" onclick="document.calcMain.displayMSG.value+='Math.log10('">
+                        </td>
+                        <td><input type="button" value="e" onclick="document.calcMain.displayMSG.value+='Math.exp('">
+                        </td>
+                        <td><input type="button" value="°" onclick="document.calcMain.displayMSG.value+='Math.deg('">
+                        </td>
+                        <td><input type="button" value="rad" onclick="document.calcMain.displayMSG.value+='Math.rad('">
+                        </td>
+                        <td><input type="button" value="√" onclick="document.calcMain.displayMSG.value+='Math.sqrt('">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="7" onclick="document.calcMain.displayMSG.value+='7'"></td>
+                        <td><input type="button" value="8" onclick="document.calcMain.displayMSG.value+='8'"></td>
+                        <td><input type="button" value="9" onclick="document.calcMain.displayMSG.value+='9'"></td>
+                        <td><input type="button" value="/" onclick="document.calcMain.displayMSG.value+='/'"></td>
+                        <td><input type="button" value="^2" onclick="document.calcMain.displayMSG.value+='Math.pow('"></td>
+                        <td><input type="button" value="!" onclick="document.calcMain.displayMSG.value+='!'"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="4" onclick="document.calcMain.displayMSG.value+='4'"></td>
+                        <td><input type="button" value="5" onclick="document.calcMain.displayMSG.value+='5'"></td>
+                        <td><input type="button" value="6" onclick="document.calcMain.displayMSG.value+='6'"></td>
+                        <td><input type="button" value="*" onclick="document.calcMain.displayMSG.value+='*'"></td>
+                        <td><input type="button" value="(" onclick="document.calcMain.displayMSG.value+='('"></td>
+                        <td><input type="button" value=")" onclick="document.calcMain.displayMSG.value+=')'"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="1" onclick="document.calcMain.displayMSG.value+='1'"></td>
+                        <td><input type="button" value="2" onclick="document.calcMain.displayMSG.value+='2'"></td>
+                        <td><input type="button" value="3" onclick="document.calcMain.displayMSG.value+='3'"></td>
+                        <td><input type="button" value="-" onclick="document.calcMain.displayMSG.value+='-'"></td>
+                        <td><input type="button" value="%" onclick="document.calcMain.displayMSG.value+='%'"></td>
+                        <td><input type="button" value="." onclick="document.calcMain.displayMSG.value+='.'"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="," onclick="document.calcMain.displayMSG.value+=','"></td>
+                        <td><input type="button" value="0" onclick="document.calcMain.displayMSG.value+='0'"></td>
+                        <td><input type="button" value="+" onclick="document.calcMain.displayMSG.value+='+'"></td>
+                        <td><input type="button" value="C" onclick="document.calcMain.displayMSG.value=''"></td>
+                        <td><input type="button" value="⌫"onclick="document.calcMain.displayMSG.value=document.calcMain.displayMSG.value.slice(0,-1)"></td>
+                        <td><input type="button" value="=" onclick="handleSubmit()"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
